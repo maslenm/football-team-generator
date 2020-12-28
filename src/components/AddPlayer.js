@@ -11,6 +11,7 @@ class AddPlayer extends Component {
 		this.handleChange = this.handleChange.bind(this);
 		this.addPlayer = this.addPlayer.bind(this);
 	}
+
 	handleChange(e) {
 		this.setState({ playerName: e.currentTarget.value });
 	}
@@ -20,10 +21,12 @@ class AddPlayer extends Component {
 
 		const { players, playerName } = this.state;
 
-		this.setState({
-			players: [...this.state.players, playerName],
-			playerName: "",
-		});
+		if (playerName !== "" && players.length < 10) {
+			this.setState({
+				players: [...players, playerName],
+				playerName: "",
+			});
+		}
 	}
 
 	render() {
@@ -47,8 +50,8 @@ class AddPlayer extends Component {
 					<p>No players have been added.</p>
 				) : (
 					<ul>
-						{players.map((player) => {
-							return <li key={player}> {player}</li>;
+						{players.map((player, index) => {
+							return <li key={index}> {player}</li>;
 						})}
 					</ul>
 				)}
