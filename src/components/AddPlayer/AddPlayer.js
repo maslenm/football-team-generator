@@ -6,7 +6,6 @@ class AddPlayer extends Component {
 
 		this.state = {
 			playerName: "",
-			players: [],
 		};
 		this.handleChange = this.handleChange.bind(this);
 		this.addPlayer = this.addPlayer.bind(this);
@@ -19,18 +18,13 @@ class AddPlayer extends Component {
 	addPlayer(e) {
 		e.preventDefault();
 
-		const { players, playerName } = this.state;
-
-		if (playerName !== "" && players.length < 10) {
-			this.setState({
-				players: [...players, playerName],
-				playerName: "",
-			});
-		}
+		const { onSubmit } = this.props;
+		onSubmit({ ...this.state });
+		this.setState({ playerName: "" });
 	}
 
 	render() {
-		const { playerName, players } = this.state;
+		const { playerName } = this.state;
 		return (
 			<>
 				<h1>ENTER PLAYER NAMES:</h1>
@@ -45,16 +39,6 @@ class AddPlayer extends Component {
 					/>
 					<button>Add</button>
 				</form>
-				<h3>Current Players:</h3>
-				{players.length === 0 ? (
-					<p>No players have been added.</p>
-				) : (
-					<ul>
-						{players.map((player, index) => {
-							return <li key={index}> {player}</li>;
-						})}
-					</ul>
-				)}
 			</>
 		);
 	}
