@@ -22,21 +22,20 @@ let arrayShuffle = (arr) => {
 	return arr;
 };
 
-//let teamsArr = arrayShuffle(arr);
+const createTeams = (teams) => {
+	let midPoint = Math.floor(teams.length / 2);
 
-const createTeams = (teamsArr) => {
-	let midPoint = Math.floor(teamsArr.length / 2);
+	let team1 = teams.slice(0, midPoint);
 
-	let team1 = teamsArr.slice(0, midPoint);
-
-	let team2 = teamsArr.slice(midPoint);
-	return [team1, team2];
+	let team2 = teams.slice(midPoint);
+	return { team1, team2 };
 };
 
-//let twoTeams = createTeams(teamsArr);
-
 const createTeamsReducer = (state, action) => {
-	return { ...state, teams: createTeams(arrayShuffle([...state.players])) };
+	return {
+		...state,
+		teams: createTeams(arrayShuffle([...state.players])),
+	};
 };
 
 const reducer = (state, action) => {
