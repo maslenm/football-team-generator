@@ -9,6 +9,7 @@ class AddPlayer extends Component {
 		};
 		this.handleChange = this.handleChange.bind(this);
 		this.addPlayer = this.addPlayer.bind(this);
+		this.handleCreate = this.handleCreate.bind(this);
 	}
 
 	handleChange(e) {
@@ -21,6 +22,10 @@ class AddPlayer extends Component {
 		const { onSubmit } = this.props;
 		onSubmit({ ...this.state });
 		this.setState({ playerName: "" });
+	}
+
+	handleCreate() {
+		this.props.handleCreate(this.props.data);
 	}
 
 	render() {
@@ -39,6 +44,8 @@ class AddPlayer extends Component {
 					/>
 					<button>Add</button>
 				</form>
+
+				<button onClick={this.handleCreate}>Create Teams</button>
 			</>
 		);
 	}
