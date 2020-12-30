@@ -21,8 +21,8 @@ let arrayShuffle = (arr) => {
 	}
 	return arr;
 };
-/* 
-let teamsArr = arrayShuffle(state.players);
+
+//let teamsArr = arrayShuffle(arr);
 
 const createTeams = (teamsArr) => {
 	let midPoint = Math.floor(teamsArr.length / 2);
@@ -32,11 +32,11 @@ const createTeams = (teamsArr) => {
 	let team2 = teamsArr.slice(midPoint);
 	return [team1, team2];
 };
-let twoTeams = createTeams(teamsArr);
-console.log(twoTeams); */
+
+//let twoTeams = createTeams(teamsArr);
 
 const createTeamsReducer = (state, action) => {
-	return { ...state, teams: arrayShuffle([...state.players]) };
+	return { ...state, teams: createTeams(arrayShuffle([...state.players])) };
 };
 
 const reducer = (state, action) => {
