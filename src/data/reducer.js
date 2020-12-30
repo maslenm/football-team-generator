@@ -7,8 +7,36 @@ const addPlayerReducer = (state, action) => {
 	return state;
 };
 
+/* https://www.youtube.com/watch?v=myL4xmtAVtw (JavaScript Problem: Shuffling an Array)(All Things JavaScript, LLC) */
+
+let arrayShuffle = (arr) => {
+	let newPos, temp;
+
+	for (let i = arr.length - 1; i > 0; i--) {
+		//math.floor rounds down random value
+		newPos = Math.floor(Math.random() * (i + 1));
+		temp = arr[i];
+		arr[i] = arr[newPos];
+		arr[newPos] = temp;
+	}
+	return arr;
+};
+/* 
+let teamsArr = arrayShuffle(state.players);
+
+const createTeams = (teamsArr) => {
+	let midPoint = Math.floor(teamsArr.length / 2);
+
+	let team1 = teamsArr.slice(0, midPoint);
+
+	let team2 = teamsArr.slice(midPoint);
+	return [team1, team2];
+};
+let twoTeams = createTeams(teamsArr);
+console.log(twoTeams); */
+
 const createTeamsReducer = (state, action) => {
-	return { ...state, teams: [...state.players] };
+	return { ...state, teams: arrayShuffle([...state.players]) };
 };
 
 const reducer = (state, action) => {
