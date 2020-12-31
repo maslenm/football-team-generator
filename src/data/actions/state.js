@@ -6,3 +6,12 @@ export const addPlayer = (data) => {
 		},
 	};
 };
+
+export const createTeams = (players) => {
+	return {
+		type: "CREATE_TEAMS",
+		payload: {
+			players,
+		},
+	};
+};
