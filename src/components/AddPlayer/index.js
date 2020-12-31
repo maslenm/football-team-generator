@@ -1,7 +1,6 @@
 import AddPlayer from "./AddPlayer";
 import { connect } from "react-redux";
-import { addPlayer } from "../../data/actions/state";
-import { createTeams } from "../../data/actions/state";
+import { addPlayer, createTeams } from "../../data/actions/state";
 
 const mapDispatchToProps = (dispatch) => {
 	return {

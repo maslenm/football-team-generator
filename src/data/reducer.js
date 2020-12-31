@@ -1,3 +1,4 @@
+// reducer to add player to the players list, copying existing state and adding the action
 const addPlayerReducer = (state, action) => {
 	if (state.playerName !== "" && state.players.length < 10)
 		return {
@@ -7,8 +8,8 @@ const addPlayerReducer = (state, action) => {
 	return state;
 };
 
-/* https://www.youtube.com/watch?v=myL4xmtAVtw (JavaScript Problem: Shuffling an Array)(All Things JavaScript, LLC) */
-
+//https://www.youtube.com/watch?v=myL4xmtAVtw (JavaScript Problem: Shuffling an Array)(All Things JavaScript, LLC)
+//function to shuffle players list
 let arrayShuffle = (arr) => {
 	let newPos, temp;
 
@@ -22,6 +23,7 @@ let arrayShuffle = (arr) => {
 	return arr;
 };
 
+//function to split players list into 2 teams
 const createTeams = (teams) => {
 	let midPoint = Math.floor(teams.length / 2);
 
@@ -31,6 +33,7 @@ const createTeams = (teams) => {
 	return { team1, team2 };
 };
 
+// reducer to apply functions to create random teams lists from players list
 const createTeamsReducer = (state, action) => {
 	return {
 		...state,
@@ -38,6 +41,7 @@ const createTeamsReducer = (state, action) => {
 	};
 };
 
+//Main reducer
 const reducer = (state, action) => {
 	switch (action.type) {
 		case "ADD_PLAYER":
