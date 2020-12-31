@@ -1,4 +1,6 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
+import PlayerList from "../PlayerList";
 
 class AddPlayer extends Component {
 	constructor(props) {
@@ -45,7 +47,11 @@ class AddPlayer extends Component {
 					<button>Add</button>
 				</form>
 
-				<button onClick={this.handleCreate}>Create Teams</button>
+				<Link to="/teamslist">
+					<button onClick={this.handleCreate}>Create Teams</button>
+				</Link>
+
+				<PlayerList />
 			</>
 		);
 	}
