@@ -1,0 +1,25 @@
+.nav-header {
+	background-color: var(--darkGrey);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.nav-main {
+	background-color: var(--darkGrey);
+}
+
+.title {
+	padding: 10px;
+	border: 2px;
+	border-color: var(--offWhite);
+	border-style: solid;
+	background-color: var(--greyBg);
+}

@@ -1,0 +1,39 @@
+.greenButton {
+	background-color: var(--greenButton);
+	color: var(--whiteText);
+	font-size: var(--standardSize);
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 8px;
+	border-width: 0px;
+	display: inline-block;
+	padding: 15px 25px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.start {
+	grid-column: 1 / span 3;
+}
+
+.greenButton:hover {
+	background-color: var(--greenButtonHover);
+}
+
+.restartButton {
+	background-color: var(--redButton);
+	color: var(--whiteText);
+	font-size: var(--smallSize);
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 8px;
+	border-width: 0px;
+	display: inline-block;
+	padding: 15px 25px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.restartButton:hover {
+	background-color: var(--redButtonHover);
+}

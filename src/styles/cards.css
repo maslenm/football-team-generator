@@ -1,0 +1,61 @@
+.card {
+	background-color: var(--darkGrey);
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	display: grid;
+	width: 90%;
+	padding-bottom: 50px;
+}
+
+.instruction-header {
+	text-align: center;
+	padding: 20px;
+	background-color: var(--greyBg);
+}
+
+.instruction {
+	grid-column: 1 / span 3;
+	border-left: 2px;
+	border-color: red;
+	border-style: solid;
+	margin: 40px;
+	width: 90%;
+}
+
+.instruction-list {
+	padding: 20px;
+	display: grid;
+	list-style-position: inside;
+	list-style-image: url(../assets/images/football_svg.png);
+	background-color: var(--lightGreyBg);
+	text-transform: capitalize;
+	justify-content: center;
+}
+.card ul li {
+	font-size: var(--standardSize);
+	font-family: "Prompt", sans-serif;
+	padding: 25px;
+}
+
+.welcome-header {
+	text-align: center;
+	padding: 20px;
+	background-color: var(--greyBg);
+}
+
+.welcome {
+	grid-column: 1 / span 3;
+	border-left: 2px;
+	border-color: red;
+	border-style: solid;
+	margin: 40px 40px 0px 40px;
+	width: 90%;
+}
+
+.welcome-content {
+	font-size: var(--standardSize);
+	padding: 20px;
+	display: grid;
+	background-color: var(--lightGreyBg);
+	justify-content: center;
+}
