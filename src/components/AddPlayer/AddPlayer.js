@@ -1,5 +1,4 @@
 import { Component } from "react";
-import { Link } from "react-router-dom";
 import PlayerList from "../PlayerList";
 
 class AddPlayer extends Component {
@@ -44,13 +43,11 @@ class AddPlayer extends Component {
 						value={playerName}
 						onChange={this.handleChange}
 					/>
-					<button>Add</button>
+					<button className="greenButton">Add</button>
 				</form>
-
-				<Link to="/teamslist">
-					<button onClick={this.handleCreate}>Create Teams</button>
-				</Link>
-
+				<button className="greenButton" onClick={this.handleCreate}>
+					Create Teams
+				</button>
 				<PlayerList />
 			</>
 		);
