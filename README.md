@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# AutoTeam
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- This project is built using React and Redux.
 
-## Available Scripts
+- It is my solution to the technical challenge brief set by DevelopMe to create a tool that will randomly select 2 teams for a 5-a-side football match, from a list of 10 players.
 
-In the project directory, you can run:
+# To get the App setup on your machine -
 
-### `npm start`
+### 1. Clone the repo by running -
 
-Runs the app in the development mode.\
+`git clone git@github.com:maslenm/football-team-generator.git`
+
+### 2. Install all the required packages by running-
+
+`npm install`
+
+### 3. Run the app by running -
+
+`npm start`
+
+This will run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+# AutoTeam Tool Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Add your 10 player names
+- Click the create button to generate two random teams
+- Has the option to reshuffle
 
-### `npm run build`
+# About The Build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Its made using React and Redux, and uses CSS for the styling.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In it's current state it meets the MVP and meets the minimum brief as far as I understand it.
+Due to my time limitations I decided this was all that was achievable for now.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Future updates
 
-### `npm run eject`
+The next step for the app would be the following features :
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Add Team names
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Allow for different number of players eg. 3v3, 4v4 ..etc
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Add player skill level
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Even up the teams by skill level
 
-## Learn More
+- Allow for tracking score
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Edit teams/players
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add back-end support
