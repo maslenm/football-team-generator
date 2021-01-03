@@ -15,12 +15,13 @@ const Home = () => (
 		</section>
 		<section className="instruction">
 			<header className="instruction-header">
-				<h2>Instructions:</h2>
+				<h2>Instructions :</h2>
 			</header>
 			<ul className="instruction-list">
 				<li>Enter 10 player names</li>
 				<li>Submit your entries</li>
 				<li>View Randomly generated teams</li>
+				<li>Hit Restart to wipe your players and start again</li>
 			</ul>
 		</section>
 		<section className="start">
