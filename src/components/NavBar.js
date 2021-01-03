@@ -4,8 +4,8 @@ const NavBar = ({ name }) => (
 	<>
 		<header className="nav-header">
 			<section className="title">
-				<h1 className="logo">AutoTeam</h1>
-				<h2 className="logo">Football Team Picker</h2>
+				<h1 className="logoH1">AutoTeam</h1>
+				<h2 className="logoH2">Football Team Picker</h2>
 			</section>
 			<nav className="nav-main">
 				<ResetButton name={"Restart"} />
