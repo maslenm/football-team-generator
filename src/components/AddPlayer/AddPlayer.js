@@ -7,6 +7,7 @@ class AddPlayer extends Component {
 
 		this.state = {
 			playerName: "",
+			playersAdded: this.props.playersAdded,
 		};
 		this.handleChange = this.handleChange.bind(this);
 		this.addPlayer = this.addPlayer.bind(this);
@@ -31,30 +32,34 @@ class AddPlayer extends Component {
 
 	render() {
 		const { playerName } = this.state;
+		const { playersAdded } = this.props;
 		return (
 			<>
-				<section className="addPlayer">
-					<header className="addPlayer-header">
-						<h2>Enter Your Players :</h2>
-					</header>
-					<form className="addPlayer-content" onSubmit={this.addPlayer}>
-						<label className="addPlayerInput">Name:</label>
-						<input
-							className="addPlayerInput"
-							type="text"
-							name="playerName"
-							placeholder="Enter name"
-							value={playerName}
-							onChange={this.handleChange}
-							required
-						/>
+				{!playersAdded ? (
+					<section className="addPlayer">
+						<header className="addPlayer-header">
+							<h2>Enter Your Players :</h2>
+						</header>
+						<form className="addPlayer-content" onSubmit={this.addPlayer}>
+							<label className="addPlayerInput">Name:</label>
+							<input
+								className="addPlayerInput"
+								type="text"
+								name="playerName"
+								placeholder="Enter name"
+								value={playerName}
+								onChange={this.handleChange}
+								required
+							/>
 
-						<button className="greenButton add">Add</button>
-					</form>
-				</section>
-				<button className="greenButton" onClick={this.handleCreate}>
-					Create Teams
-				</button>
+							<button className="greenButton add">Add</button>
+						</form>
+					</section>
+				) : (
+					<button className="greenButton" onClick={this.handleCreate}>
+						Create Teams
+					</button>
+				)}
 				<PlayerList />
 			</>
 		);
