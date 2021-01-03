@@ -10,7 +10,6 @@ const App = () => (
 		<>
 			<main className="container">
 				<NavBar />
-
 				<section className="card">
 					<Route exact path="/">
 						<Home />
