@@ -3,6 +3,12 @@ import { connect } from "react-redux";
 import history from "../../history";
 import { addPlayer, createTeams } from "../../data/actions/state";
 
+const mapStateToProps = (state) => {
+	return {
+		playersAdded: state.playersAdded,
+	};
+};
+
 const mapDispatchToProps = (dispatch) => {
 	return {
 		onSubmit: (data) => dispatch(addPlayer(data)),
@@ -13,4 +19,4 @@ const mapDispatchToProps = (dispatch) => {
 	};
 };
 
-export default connect(null, mapDispatchToProps)(AddPlayer);
+export default connect(mapStateToProps, mapDispatchToProps)(AddPlayer);

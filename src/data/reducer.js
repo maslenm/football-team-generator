@@ -1,10 +1,20 @@
 // reducer to add player to the players list, copying existing state and adding the action
 const addPlayerReducer = (state, action) => {
-	if (state.playerName !== "" && state.players.length < 10)
+	if (state.players.length < 10)
 		return {
 			...state,
 			players: [...state.players, action.payload],
 		};
+	return state;
+};
+
+const showCreate = (state) => {
+	if (state.players.length === 10)
+		return {
+			...state,
+			playersAdded: true,
+		};
+
 	return state;
 };
 
@@ -45,7 +55,7 @@ const createTeamsReducer = (state, action) => {
 const reducer = (state, action) => {
 	switch (action.type) {
 		case "ADD_PLAYER":
-			return addPlayerReducer(state, action);
+			return showCreate(addPlayerReducer(state, action));
 		case "CREATE_TEAMS":
 			return createTeamsReducer(state, action);
 		default:
