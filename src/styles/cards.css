@@ -211,3 +211,10 @@ label .addPlayer {
 	padding: 10px;
 	text-align: left;
 }
+
+.reShuffle {
+	margin: 0px;
+	text-align: center;
+	grid-column: 1 / span 3;
+	padding-bottom: 50px;
+}
