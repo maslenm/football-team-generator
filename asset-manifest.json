@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/maslenm/football-team-generator/static/css/main.8b0908b2.chunk.css",
-    "main.js": "/maslenm/football-team-generator/static/js/main.ab59bf2a.chunk.js",
-    "main.js.map": "/maslenm/football-team-generator/static/js/main.ab59bf2a.chunk.js.map",
+    "main.js": "/maslenm/football-team-generator/static/js/main.cf2abfe0.chunk.js",
+    "main.js.map": "/maslenm/football-team-generator/static/js/main.cf2abfe0.chunk.js.map",
     "runtime-main.js": "/maslenm/football-team-generator/static/js/runtime-main.ab39141c.js",
     "runtime-main.js.map": "/maslenm/football-team-generator/static/js/runtime-main.ab39141c.js.map",
     "static/js/2.3ea6741f.chunk.js": "/maslenm/football-team-generator/static/js/2.3ea6741f.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ab39141c.js",
     "static/js/2.3ea6741f.chunk.js",
     "static/css/main.8b0908b2.chunk.css",
-    "static/js/main.ab59bf2a.chunk.js"
+    "static/js/main.cf2abfe0.chunk.js"
   ]
 }
