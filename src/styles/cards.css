@@ -1,0 +1,213 @@
+/* main page card, holds sub-cards */
+.card {
+	background-color: var(--darkGrey);
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	display: grid;
+	width: 90%;
+	padding-bottom: 50px;
+}
+
+/* welcome cards */
+.welcome {
+	grid-column: 1 / span 3;
+	border-left: 2px;
+	border-color: red;
+	border-style: solid;
+	margin: 40px 40px 0px 40px;
+	width: 90%;
+}
+
+.welcome-header {
+	text-align: center;
+	padding: 20px;
+	background-color: var(--greyBg);
+}
+
+.welcome-content {
+	font-size: var(--standardSize);
+	padding: 20px;
+	display: grid;
+	background-color: var(--lightGreyBg);
+	justify-content: center;
+}
+
+/* instruction cards */
+.instruction-header {
+	text-align: center;
+	padding: 20px;
+	background-color: var(--greyBg);
+}
+
+.instruction {
+	grid-column: 1 / span 3;
+	border-left: 2px;
+	border-color: red;
+	border-style: solid;
+	margin: 40px;
+	width: 90%;
+}
+
+.instruction-list {
+	padding: 20px;
+	display: grid;
+	list-style-position: inside;
+	list-style-image: url(../assets/images/football_svg.png);
+	background-color: var(--lightGreyBg);
+	text-transform: capitalize;
+	justify-content: center;
+}
+
+/* general ul li card target */
+.card ul li {
+	font-size: var(--standardSize);
+	font-family: "Prompt", sans-serif;
+	padding: 25px;
+}
+
+/* addPlayer cards */
+.addPlayer-header {
+	text-align: center;
+	padding: 20px;
+	background-color: var(--greyBg);
+}
+
+.addPlayer {
+	grid-column: 1 / span 3;
+	border-left: 2px;
+	border-color: red;
+	border-style: solid;
+	margin: 40px;
+	width: 90%;
+}
+
+.addPlayer-content {
+	display: flex;
+	background-color: var(--lightGreyBg);
+	padding: 20px;
+	justify-content: center;
+}
+
+.addPlayer-list {
+	padding: 20px;
+	display: grid;
+	list-style-position: inside;
+	list-style-image: url(../assets/images/football_svg.png);
+	background-color: var(--lightGreyBg);
+	text-transform: capitalize;
+	justify-content: center;
+}
+
+form .addPlayerInput {
+	grid-column: 2 / span 5;
+	grid-row: 2;
+	align-self: center;
+	margin-right: 10px;
+}
+
+label .addPlayer {
+	grid-column: 4 / span 2;
+	align-self: center;
+}
+
+/* current player list cards */
+.players-header {
+	text-align: center;
+	padding: 20px;
+	background-color: var(--greyBg);
+}
+
+.players {
+	grid-column: 1 / span 3;
+	border-left: 2px;
+	border-color: red;
+	border-style: solid;
+	margin: 40px;
+	width: 90%;
+}
+
+.players-list {
+	padding: 20px;
+	display: grid;
+	list-style-position: inside;
+	list-style-image: url(../assets/images/football_svg.png);
+	background-color: var(--lightGreyBg);
+	text-transform: capitalize;
+	justify-items: center;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+/* players ul li card target */
+.players ul li {
+	font-size: var(--standardSize);
+	font-family: "Prompt", sans-serif;
+	padding: 10px;
+	text-align: left;
+}
+/* when no players added target */
+.players-list-none {
+	padding: 20px;
+	background-color: var(--lightGreyBg);
+	text-transform: capitalize;
+	text-align: center;
+}
+
+/* teams cards */
+.teams-page-header {
+	text-align: center;
+	padding: 20px;
+	background-color: var(--greyBg);
+}
+
+/* teams title cards */
+.teams-page {
+	border-left: 2px;
+	border-color: red;
+	border-style: solid;
+	margin: 40px 40px 0px 40px;
+	width: 95%;
+	grid-row: 1;
+	grid-column: 1 / span 2;
+}
+
+.teams-header {
+	text-align: center;
+	padding: 20px;
+	background-color: var(--greyBg);
+}
+
+/* teamsList holders cards */
+.teams {
+	border-left: 2px;
+	border-color: red;
+	border-style: solid;
+	margin: 40px;
+	width: 90%;
+	grid-row: 2;
+}
+
+.teams-list-1 {
+	padding: 20px;
+	list-style-position: inside;
+	list-style-image: url(../assets/images/football_svg.png);
+	background-color: var(--lightGreyBg);
+	text-transform: capitalize;
+	justify-items: center;
+}
+
+.teams-list-2 {
+	padding: 20px;
+	list-style-position: inside;
+	list-style-image: url(../assets/images/football_svg.png);
+	background-color: var(--lightGreyBg);
+	text-transform: capitalize;
+	justify-items: center;
+}
+
+/* teams ul li card target */
+.teams ul li {
+	font-size: var(--standardSize);
+	font-family: "Prompt", sans-serif;
+	padding: 10px;
+	text-align: left;
+}

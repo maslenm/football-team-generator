@@ -1,0 +1,77 @@
+/* fluid typography */
+/* https://www.smashingmagazine.com/2016/05/fluid-typography/ */
+
+/* Older browsers */
+html {
+	font-size: 16px;
+}
+
+/* Modern browsers only need this one */
+
+@media screen and (min-width: 25em) {
+	html {
+		font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+	}
+}
+
+/* Safari <8 and IE <11 */
+@media screen and (min-width: 25em) {
+	html {
+		font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+	}
+}
+@media screen and (min-width: 50em) {
+	html {
+		font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
+	}
+}
+
+:root {
+	color: var(--offWhite);
+}
+
+h1 {
+	font-size: var(--titleSize);
+	font-family: "Prompt", sans-serif;
+	text-transform: capitalize;
+}
+
+/* logo styling h1 */
+.title .logoH1 {
+	border-bottom-color: red;
+	border-bottom-width: 0.5px;
+	border-style: solid;
+	line-height: 1.2;
+}
+
+/* logo styling h2 */
+.title .logoH2 {
+	line-height: 1.5;
+}
+
+h2 {
+	font-size: var(--subTitleSize);
+	font-family: "Prompt", sans-serif;
+}
+
+.card ul li {
+	font-size: var(--standardSize);
+	font-family: "Prompt", sans-serif;
+}
+
+button {
+	text-transform: uppercase;
+}
+
+input {
+	color: var(--darkGrey);
+	background-color: var(--offWhite);
+	height: 3em;
+	overflow: auto;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	padding-left: 0.5rem;
+	border-radius: 5px;
+	font-size: var(--inputSize);
+}

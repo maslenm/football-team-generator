@@ -1,5 +1,4 @@
 import { Component } from "react";
-import { Link } from "react-router-dom";
 import PlayerList from "../PlayerList";
 
 class AddPlayer extends Component {
@@ -34,23 +33,28 @@ class AddPlayer extends Component {
 		const { playerName } = this.state;
 		return (
 			<>
-				<h1>ENTER PLAYER NAMES:</h1>
-				<form onSubmit={this.addPlayer}>
-					<label>Player #? Name:</label>
-					<input
-						type="text"
-						name="playerName"
-						placeholder="Enter name"
-						value={playerName}
-						onChange={this.handleChange}
-					/>
-					<button>Add</button>
-				</form>
+				<section className="addPlayer">
+					<header className="addPlayer-header">
+						<h2>Enter Your Players :</h2>
+					</header>
+					<form className="addPlayer-content" onSubmit={this.addPlayer}>
+						<label className="addPlayerInput">Name:</label>
+						<input
+							className="addPlayerInput"
+							type="text"
+							name="playerName"
+							placeholder="Enter name"
+							value={playerName}
+							onChange={this.handleChange}
+							required
+						/>
 
-				<Link to="/teamslist">
-					<button onClick={this.handleCreate}>Create Teams</button>
-				</Link>
-
+						<button className="greenButton add">Add</button>
+					</form>
+				</section>
+				<button className="greenButton" onClick={this.handleCreate}>
+					Create Teams
+				</button>
 				<PlayerList />
 			</>
 		);
