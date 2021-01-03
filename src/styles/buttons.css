@@ -44,3 +44,8 @@
 	justify-self: start;
 	align-self: center;
 }
+
+.create {
+	grid-column: 1 / span 2;
+	margin-top: 40px;
+}
