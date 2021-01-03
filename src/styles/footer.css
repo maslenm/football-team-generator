@@ -1,0 +1,20 @@
+.footer {
+	/* background-color: var(--darkGrey);
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	box-sizing: border-box;
+	position: sticky;
+	top: 0;
+	left: 0;
+    z-index: 1; */
+	margin-top: 60px;
+	width: 100%;
+	background-color: var(--darkGrey);
+	color: var(--offWhite);
+	text-align: center;
+	grid-column: 1 / span 3;
+	font-size: var(--smallSize);
+}
