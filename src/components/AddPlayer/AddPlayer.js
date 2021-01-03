@@ -56,7 +56,7 @@ class AddPlayer extends Component {
 						</form>
 					</section>
 				) : (
-					<button className="greenButton" onClick={this.handleCreate}>
+					<button className="greenButton create" onClick={this.handleCreate}>
 						Create Teams
 					</button>
 				)}
