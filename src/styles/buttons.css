@@ -20,7 +20,7 @@
 	background-color: var(--greenButtonHover);
 }
 
-.restartButton {
+.redButton {
 	background-color: var(--redButton);
 	color: var(--whiteText);
 	font-size: var(--smallSize);
@@ -34,7 +34,7 @@
 	cursor: pointer;
 }
 
-.restartButton:hover {
+.redButton:hover {
 	background-color: var(--redButtonHover);
 }
 

@@ -15,3 +15,9 @@ export const createTeams = (players) => {
 		},
 	};
 };
+
+export const reset = () => {
+	return {
+		type: "RESET",
+	};
+};

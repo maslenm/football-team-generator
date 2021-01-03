@@ -1,3 +1,4 @@
+import initial from "./initial";
 // reducer to add player to the players list, copying existing state and adding the action
 const addPlayerReducer = (state, action) => {
 	if (state.players.length < 10)
@@ -58,6 +59,8 @@ const reducer = (state, action) => {
 			return showCreate(addPlayerReducer(state, action));
 		case "CREATE_TEAMS":
 			return createTeamsReducer(state, action);
+		case "RESET":
+			return initial;
 		default:
 			return state;
 	}
