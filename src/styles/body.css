@@ -3,6 +3,7 @@
 	background-color: var(--darkGrey);
 }
 
+/* main wrapper */
 .container {
 	grid-template-columns: 1fr;
 	display: grid;

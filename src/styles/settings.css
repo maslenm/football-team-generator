@@ -9,10 +9,11 @@
 	--redButton: #ba0517;
 	--redButtonHover: #720712;
 
-	/* font */
+	/* fonts */
 	--largeSize: 4em;
 	--titleSize: 2em;
 	--subTitleSize: 1em;
 	--standardSize: 0.7em;
+	--inputSize: 0.9em;
 	--smallSize: 0.5em;
 }
