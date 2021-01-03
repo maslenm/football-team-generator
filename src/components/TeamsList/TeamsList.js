@@ -1,3 +1,5 @@
+import Shuffle from "../Shuffle";
+
 const TeamsList = ({ teams }) => (
 	<>
 		<section className="teams-page">
@@ -25,6 +27,11 @@ const TeamsList = ({ teams }) => (
 					return <li key={index}> {player.name}</li>;
 				})}
 			</ul>
+		</section>
+
+		<section className="reShuffle">
+			<p>Not Happy with the team selection? </p>
+			<Shuffle />
 		</section>
 	</>
 );
