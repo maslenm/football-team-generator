@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import ResetButton from "./ResetButton";
 
-const NavBar = () => (
+const NavBar = ({ name }) => (
 	<>
 		<header className="nav-header">
 			<section className="title">
@@ -8,9 +8,7 @@ const NavBar = () => (
 				<h2 className="logo">Football Team Picker</h2>
 			</section>
 			<nav className="nav-main">
-				<Link to="/" className="restartButton">
-					Restart
-				</Link>
+				<ResetButton name={"Restart"} />
 			</nav>
 		</header>
 	</>
