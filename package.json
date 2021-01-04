@@ -2,7 +2,7 @@
 	"name": "football-team-generator",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://github.com/maslenm/football-team-generator/",
+	"homepage": "https://maslenm.github.io/football-team-generator/",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.11.6",
 		"@testing-library/react": "^11.2.2",
