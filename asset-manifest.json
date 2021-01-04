@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/maslenm/football-team-generator/static/css/main.8b0908b2.chunk.css",
-    "main.js": "/maslenm/football-team-generator/static/js/main.cf2abfe0.chunk.js",
-    "main.js.map": "/maslenm/football-team-generator/static/js/main.cf2abfe0.chunk.js.map",
-    "runtime-main.js": "/maslenm/football-team-generator/static/js/runtime-main.ab39141c.js",
-    "runtime-main.js.map": "/maslenm/football-team-generator/static/js/runtime-main.ab39141c.js.map",
-    "static/js/2.3ea6741f.chunk.js": "/maslenm/football-team-generator/static/js/2.3ea6741f.chunk.js",
-    "static/js/2.3ea6741f.chunk.js.map": "/maslenm/football-team-generator/static/js/2.3ea6741f.chunk.js.map",
-    "static/js/3.b7df6110.chunk.js": "/maslenm/football-team-generator/static/js/3.b7df6110.chunk.js",
-    "static/js/3.b7df6110.chunk.js.map": "/maslenm/football-team-generator/static/js/3.b7df6110.chunk.js.map",
-    "index.html": "/maslenm/football-team-generator/index.html",
-    "static/css/main.8b0908b2.chunk.css.map": "/maslenm/football-team-generator/static/css/main.8b0908b2.chunk.css.map",
-    "static/js/2.3ea6741f.chunk.js.LICENSE.txt": "/maslenm/football-team-generator/static/js/2.3ea6741f.chunk.js.LICENSE.txt"
+    "main.css": "/football-team-generator/static/css/main.8b0908b2.chunk.css",
+    "main.js": "/football-team-generator/static/js/main.cf2abfe0.chunk.js",
+    "main.js.map": "/football-team-generator/static/js/main.cf2abfe0.chunk.js.map",
+    "runtime-main.js": "/football-team-generator/static/js/runtime-main.0bca5f0b.js",
+    "runtime-main.js.map": "/football-team-generator/static/js/runtime-main.0bca5f0b.js.map",
+    "static/js/2.3ea6741f.chunk.js": "/football-team-generator/static/js/2.3ea6741f.chunk.js",
+    "static/js/2.3ea6741f.chunk.js.map": "/football-team-generator/static/js/2.3ea6741f.chunk.js.map",
+    "static/js/3.b7df6110.chunk.js": "/football-team-generator/static/js/3.b7df6110.chunk.js",
+    "static/js/3.b7df6110.chunk.js.map": "/football-team-generator/static/js/3.b7df6110.chunk.js.map",
+    "index.html": "/football-team-generator/index.html",
+    "static/css/main.8b0908b2.chunk.css.map": "/football-team-generator/static/css/main.8b0908b2.chunk.css.map",
+    "static/js/2.3ea6741f.chunk.js.LICENSE.txt": "/football-team-generator/static/js/2.3ea6741f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ab39141c.js",
+    "static/js/runtime-main.0bca5f0b.js",
     "static/js/2.3ea6741f.chunk.js",
     "static/css/main.8b0908b2.chunk.css",
     "static/js/main.cf2abfe0.chunk.js"
